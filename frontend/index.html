@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List - Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Minha Lista de Tarefas</h1>
+            <p class="subtitle">Organize suas tarefas de forma simples e eficiente</p>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="taskInput" 
+                        placeholder="Digite uma nova tarefa..."
+                        class="task-input"
+                    >
+                    <button id="addBtn" class="btn btn-primary">Adicionar Tarefa</button>
+                </div>
+                <div id="errorMessage" class="error-message"></div>
+            </section>
+
+            <section class="filter-section">
+                <button id="filterAll" class="filter-btn active">Todas (0)</button>
+                <button id="filterPending" class="filter-btn">Pendentes (0)</button>
+                <button id="filterCompleted" class="filter-btn">Concluídas (0)</button>
+            </section>
+
+            <section class="tasks-section">
+                <ul id="taskList" class="task-list">
+                    <li class="empty-state">
+                        <p>Nenhuma tarefa adicionada ainda</p>
+                        <p class="text-small">Comece adicionando uma tarefa acima</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="stats-section">
+                <div class="stat">
+                    <span class="stat-label">Total:</span>
+                    <span id="totalCount" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Pendentes:</span>
+                    <span id="pendingCount" class="stat-value">0</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-label">Concluídas:</span>
+                    <span id="completedCount" class="stat-value">0</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>ToDo List © 2026 - Trabalho Final de Curso Técnico em Informática</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
