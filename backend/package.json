@@ -1,0 +1,30 @@
+{
+  "name": "todo-list-backend",
+  "version": "1.0.0",
+  "description": "Backend Node.js/Express para aplicação de gerenciamento de tarefas",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest --detectOpenHandles --forceExit",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "todo",
+    "task",
+    "express",
+    "sqlite"
+  ],
+  "author": "Trabalho Final de Curso",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  }
+}
